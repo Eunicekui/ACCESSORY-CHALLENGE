@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessory</title>
+    <style>
+      body {
+        margin: 0;
+        background: rgb(248, 243, 243);
+      }
+      /*header section*/
+      header {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        background-color: #fff;
+      
+      }
+      header .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 25%;
+        height: 50%;
+      }
+      header .logo img {
+        width: 15vw;
+        height: 10vh;
+      }
+      header .logo p {
+        font-size: 20px;
+        color: blue;
+        font-weight: 900;
+      }
+      header .nav-bars {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+      }
+      header .nav-bars .active {
+        text-decoration: underline;
+        font-size: 19px;
+        font-weight: 600;
+        color: blue;
+      }
+      header .nav-bars .active:hover {
+        text-decoration: none;
+      }
+      header a {
+        font-size: 19px;
+        font-weight: 400;
+        text-decoration: none;
+      }
+      header a:hover {
+        text-decoration: underline;
+        font-size: 19px;
+        font-weight: 600;
+        color: blueviolet;
+      }
+      /*main section*/
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      main .home-section {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/590/original/neckpi.jpg?1718025335);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 70vh;
+        opacity: 0.8;
+      }
+      main .home-section p {
+        font-size: 80px;
+        font-weight: 900;
+      }
+      main .home-section button {
+        background-color: blueviolet;
+        color: #fff;
+        width: 10vw;
+        height: 10vh;
+        border: none;
+        border-radius: 20px;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      main .home-section button:hover {
+        background-color: blue;
+      }
+      main .must-have-accessory {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+        gap: 20px;
+        margin-top: 70px;
+      }
+      main .must-have-accessory .must-have-contents {
+        width: 35vw;
+        height: 50vh;
+        text-align: left;
+      }
+      main .must-have-accessory .must-have-contents h1 {
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: 900;
+      }
+      main .must-have-accessory .must-have-contents p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      main .must-have-accessory .image {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/591/original/woman.jpg?1718025353);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 26vw;
+        height: 60vh;
+        border-radius: 10px;
+      }
+      main .why-it {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+        gap: 20px;
+      }
+      main .why-it .image {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/582/original/eunice.jpg?1718024811);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 26vw;
+        height: 60vh;
+        border-radius: 10px;
+      }
+      main .why-it .why-it-contents {
+        width: 35vw;
+        height: 50vh;
+
+        text-align: left;
+      }
+      main .why-it .why-it-contents h2 {
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: 900;
+      }
+      main .why-it .why-it-contents p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      main .personal-story {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80vh;
+        gap: 20px;
+      }
+      main .personal-story .story-contents {
+        width: 35vw;
+        height: 50vh;
+        text-align: left;
+      }
+      main .personal-story .story-contents h3 {
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: 900;
+      }
+      main .personal-story .story-contents p {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      main .personal-story .image {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/592/original/woman3.jpg?1718025369);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 26vw;
+        height: 70vh;
+        border-radius: 10px;
+      }
+      footer {
+        text-align: center;
+        font-size: 20px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--Navigation section-->
+      <div class="logo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/589/original/couple.jpg?1718025315"
+          alt="logo-image"
+        />
+        <p>A Necklace</p>
+      </div>
+      <div class="nav-bars">
+        <div class="active">
+          <a href="#home">Home</a>
+        </div>
+        <a href="#Accessory">Accessory</a>
+        <a href="#features">Features</a>
+        <a href="#story">Personal Story</a>
+      </div>
+    </header>
+    <main>
+      <!--home-->
+      <div class="home-section" id="home">
+        <p id="heading">A necklace is my must have accessory</p>
+        <button id="btn">LOG IN</button>
+      </div>
+      <!--The Accessory i cannot live without-->
+      <div class="must-have-accessory" id="Accessory">
+        <div class="must-have-contents">
+          <h1>Must-Have Accessory</h1>
+          <p>
+            We are living in a world filled with trends and fleeting fashions,
+            but there exists one accessory that transcends time and embodies
+            timeless elegance. That is the necklace my must have accessory.
+            Whether its a delicate chain adoened with a single pendant or a
+            statement piece that commands attention, a necklace is more than
+            just an accessory but its a reflection of your personal style amd
+            individuality.
+          </p>
+        </div>
+        <div class="image"></div>
+      </div>
+      <!--Why it?-->
+      <div class="why-it" id="features">
+        <div class="image"></div>
+        <div class="why-it-contents">
+          <h2>It's Unique features</h2>
+          <p>
+            Beyond their aesthetic appeal, they serve as potent symbols of
+            culture, identity, and affection. Intricately designed with an
+            assortment of materials ranging from precious metals to gemstones,
+            each necklace tells a story of craftmansship and creativity.
+            Moreover, personlaized necklaces, engraved with the names of loved
+            ones, encapsulate sentimental value, serving as cherished mementos
+            of special bonds and memories, adding an intimate touch to this
+            beloved.
+          </p>
+        </div>
+      </div>
+      <!--Personal story-->
+      <div class="personal-story" id="story">
+        <div class="story-contents">
+          <h3>Personal Story</h3>
+          <p>
+            Necklaces hold a profound significance in my life. Whether acquired
+            through my own purchase or bestowed as a token of affection, each
+            necklace symbolizes a unique bond. It may appear peculiar to an
+            outsider, yet i percive an intimate correlation between necklaces
+            and relationships i hold dear. An example arises from the gift of a
+            necklace by my boyfriend, a tangible manifestation of his love. Its
+            constant presence,even during showering, serves as a constant
+            reminder of our bond but during rough patches in our relationship,
+            the necklace inexplicably detaches from my neck.
+          </p>
+        </div>
+        <div class="image"></div>
+      </div>
+    </main>
+    <footer>
+      This landing page was coded by
+      <a href="https://github.com/Eunicekui" target="_blank">EuniceKui</a>
+    </footer>
+  </body>
+  <script>
+    function handleButton() {
+      let name = prompt("What is your name");
+      let headingElement = document.querySelector("#heading");
+      headingElement.innerHTML = `Welcome, ${name}, to my must have Accessory!`;
+    }
+    let buttonElement = document.querySelector("#btn");
+    buttonElement.addEventListener("click", handleButton);
+  </script>
+</html>
